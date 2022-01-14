@@ -93,12 +93,12 @@
               <img src="https://images.pexels.com/photos/2408666/pexels-photo-2408666.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500" class="object-cover w-full h-64" alt="" />
               <div class="p-5 border border-t-0">
                 <p class="mb-3 text-xs font-semibold tracking-wide uppercase">
-                  <a href="/" class="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700" aria-label="Category" title="traveling">traveling</a>
-                  <span class="text-gray-600">— 28 Dec 2020</span>
+                  <a  class="transition-colors duration-200 text-blue-gray-900 hover:text-deep-purple-accent-700" aria-label="Category" title="traveling">{{$game->console}}</a>
+                  <span class="text-gray-600">— {{$game->title}}</span>
                 </p>
                 <a href="/" aria-label="Category" title="Visit the East" class="inline-block mb-3 text-2xl font-bold leading-5 transition-colors duration-200 hover:text-deep-purple-accent-700">Visit the East</a>
                 <p class="mb-2 text-gray-700">
-                  Sed ut perspiciatis unde omnis iste natus error sit sed quia consequuntur magni voluptatem doloremque.
+                  {{$game->description}}
                 </p>
                 <a href="/" aria-label="" class="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800">Learn more</a>
               </div>
@@ -119,10 +119,10 @@
               <div class="relative overflow-hidden transition duration-300 transform rounded shadow-lg lg:hover:-translate-y-2 hover:shadow-2xl">
                 <img class="object-cover w-full h-56 md:h-64 xl:h-80" src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260" alt="Person" />
                 <div class="absolute inset-0 flex flex-col justify-center px-5 py-4 text-center transition-opacity duration-300 bg-black bg-opacity-75 opacity-0 hover:opacity-100">
-                  <p class="mb-1 text-lg font-bold text-gray-100">Oliver Aguilerra</p>
-                  <p class="mb-4 text-xs text-gray-100">Product Manager</p>
+                  <p class="mb-1 text-lg font-bold text-gray-100">{{$cd->artist}}</p>
+                  <p class="mb-4 text-xs text-gray-100">{{$cd->name}}</p>
                   <p class="mb-4 text-xs tracking-wide text-gray-400">
-                    Vincent Van Gogh’s most popular painting, The Starry Night.
+                    {{$cd->description}}
                   </p>
                   <div class="flex items-center justify-center space-x-3">
                     <a href="/" class="text-white transition-colors duration-300 hover:text-teal-accent-400">
