@@ -6,8 +6,8 @@
             <div class=" py-40 sm:py-20  md:hidden">
             </div>
             <div class="mt-10 custom sm:mt-96 md:mt-0 h-full flex lg:h-96 px-4 md:px-0  z-10 justify-center items-center md:items-start flex-col  xl:px-20">
-                <h1 class="text-2xl sm:text-4xl xl:text-6xl text-center md:text-left font-semibold lg:font-normal text-white md:text-gray-800" >Greetings<br/>Santa is coming,<br/><span class="lg:font-semibold">Dear Friends</span></h1>
-                <p class="mt-4 md:w-80 lg:w-3/4 text-center md:text-left  text-base leading-normal text-white md:text-gray-600" >Find the perfect holiday gift for everyone on your list this year, no matter what’s your budget.</p>  
+                <h1 class="text-2xl sm:text-4xl xl:text-6xl text-center md:text-left font-semibold lg:font-normal text-white md:text-gray-800" >Greetings<br/>Browse Your Favourites<br/><span class="lg:font-semibold">Books, CDs, Games.</span></h1>
+                <p class="mt-4 md:w-80 lg:w-3/4 text-center md:text-left  text-base leading-normal text-white md:text-gray-600" >Your most unhappy customers are your most important source of learning.</p>  
             </div>
         </div>
     </div>
@@ -17,15 +17,15 @@
             <div class="grid xl:grid-cols-4 md:grid-cols-2 md:px-16 lg:px-44 xl:px-4 space-y-6 xl:space-y-0 py-12 justify-center items-center">
                 <div class="flex justify-start xl:items-start items-center flex-col xl:w-72">
                     <div class="flex justify-start items-start">
-                        <p class="w-72 text-4xl font-semibold leading-10 text-gray-800 dark:text-white">My Categories</p>
+                        <p class="w-72 text-4xl font-semibold leading-10 text-gray-800 dark:text-white">Our Categories</p>
                     </div>
                 </div>
                 <div class="group flex justify-start xl:items-start items-center flex-col">
                     <div class="h-full relative">
-                        <img src="https://i.ibb.co/qMzLCcB/pexels-isaw-company-945688-1.png" alt="pexels-isaw-company-945688-1" />
+                        <img src="https://images.pexels.com/photos/1926988/pexels-photo-1926988.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="pexels-isaw-company-945688-1" />
                         <div class="absolute bottom-6 left-6 w-36 h-12">
                             <div class="w-36 h-12 border-transparent tranform duration-500 group-hover:border-white border">
-                                <button class="-mt-1.5 -ml-1.5 w-36 h-12 bg-white dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white"><p class="text-base font-medium leading-none text-gray-800 dark:text-white">Books</p></button>
+                                <button class="-mt-1.5 -ml-1.5 w-36 h-12 bg-white dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white"><a class="text-base font-medium leading-none text-gray-800 dark:text-white scroll" href="#books">Books</a></button>
                             </div>
                         </div>
                         <div class="absolute top-0 right-0 w-12 flex justify-start item-start h-12 tranform duration-500 group-hover:bg-white dark:hover:bg-gray-900 dark:bg-transparent">
@@ -35,10 +35,10 @@
                 </div>
                 <div class="group flex justify-start xl:items-start items-center flex-col">
                     <div class="h-full relative">
-                        <img src="https://i.ibb.co/61zxMmk/pexels-dmitry-zvolskiy-2082092-1.png" alt="pexels-isaw-company-945688-1" />
+                        <img src="https://images.pexels.com/photos/5473396/pexels-photo-5473396.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="pexels-isaw-company-945688-1" />
                         <div class="absolute bottom-6 left-6 w-36 h-12">
                             <div class="w-36 h-12 border-transparent group-hover:border-white border tranform duration-500">
-                                <button class="-mt-1.5 -ml-1.5 w-36 h-12 bg-white dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white"><p class="text-base font-medium leading-none text-gray-800 dark:text-white">CDS</p></button>
+                                <button class="-mt-1.5 -ml-1.5 w-36 h-12 bg-white dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white"><a class="text-base font-medium leading-none text-gray-800 dark:text-white scroll" href="#cds">CDS</a></button>
                             </div>
                         </div>
                         <div class="absolute top-0 right-0 w-12 flex justify-start item-start h-12 group-hover:bg-white tranform duration-500 dark:hover:bg-gray-900 dark:bg-transparent">
@@ -48,10 +48,10 @@
                 </div>
                 <div class="group flex justify-start xl:items-start items-center flex-col">
                     <div class="h-full relative">
-                        <img src="https://i.ibb.co/7zF9Scc/pexels-devon-rockola-1578507-1.png" alt="pexels-isaw-company-945688-1" />
+                        <img src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=694&q=80" alt="pexels-isaw-company-945688-1" style="height:470px" />
                         <div class="absolute bottom-6 left-6 w-36 h-12">
                             <div class="w-36 h-12 border-transparent group-hover:border-white border tranform duration-500">
-                                <button class="-mt-1.5 -ml-1.5 w-36 h-12 bg-white dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white"><p class="text-base font-medium leading-none text-gray-800 dark:text-white">Games</p></button>
+                                <button class="-mt-1.5 -ml-1.5 w-36 h-12 bg-white dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white"><a class="text-base font-medium leading-none text-gray-800 dark:text-white scroll" href="#games">Games</a></button>
                             </div>
                         </div>
                         <div class="absolute top-0 right-0 w-12 flex justify-start item-start h-12 group-hover:bg-white tranform duration-500 dark:hover:bg-gray-900 dark:bg-transparent">
@@ -64,7 +64,7 @@
     </div>
 
     
-    <div class="container xl:w-full w-11/12 mx-auto pt-16">
+    <div class="container xl:w-full w-11/12 mx-auto pt-16" id="books">
       <div class="w-full">
           <h1 class="xl:text-4xl lg:text-4xl text-3xl sm:text-left flex justify-center text-gray-800 font-extrabold  mx-auto sm:mx-0 font-mono">Books</h1>
       </div>
@@ -85,9 +85,9 @@
   </div>
 
 
-    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" id="games">
       <h1 class="xl:text-4xl lg:text-4xl text-3xl sm:text-left flex justify-center text-gray-800 font-extrabold  mx-auto sm:mx-0 font-mono">Games</h1>
-        <div class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
+        <div class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full mt-10">
           @foreach($games as $game)
             <div class="overflow-hidden transition-shadow duration-300 bg-white rounded shadow-sm">
               <img src="{{$game->url}}" class="object-cover w-full h-64" alt="" />
@@ -106,7 +106,7 @@
         </div>
     </div>
 
-      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" id="cds">
         <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <h2 class="max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto font-mono">
                 CDS
@@ -133,12 +133,12 @@
     <div class="relative flex justify-center items-center mb-10">
       <img class="w-full object-cover h-80 md:h-96 xl:h-full" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/newsletter_11_bg.png" alt="background">
       <div class="absolute  px-4 flex justify-center items-center flex-col ">
-          <p class="text-xl w-full md:w-2/3 md:text-2xl xl:text-4xl font-semibold tracking-wider leading-6 md:leading-8 xl:leading-snug text-center text-white" ><span class="relative"><span class="z-20 relative">Signup</span><img class="absolute z-0 -bottom-1 right-0" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/newletter_11.svg" alt="text gradient"></span> to have the latest patterns & trends delivered directly to your inbox</p>
+          <p class="text-xl w-full md:w-2/3 md:text-2xl xl:text-4xl font-semibold tracking-wider leading-6 md:leading-8 xl:leading-snug text-center text-white" ><span class="relative"><span class="z-20 relative">Subscribe</span><img class="absolute z-0 -bottom-1 right-0" src="https://tuk-cdn.s3.amazonaws.com/can-uploader/newletter_11.svg" alt="text gradient"></span> to us for latest Games, Books and CDs</p>
           <form class="mt-6 md:mt-12 flex w-full sm:w-2/3 justify-center sm:flex-row flex-col items-center sm:h-12 xl:h-14 sm:space-x-6" method="POST" action="{{url('/send-mail')}}">
               @csrf
               <input class="h-10 sm:h-full px-6 xl:px-8 w-full text-base focus:outline-none bg-gray-100 rounded-md placeholder-gray-600 text-gray-600" placeholder="Email Address" class="w-full" type="email" name="email" >
               <button class="mt-4 sm:mt-0 h-10 sm:h-full w-full sm:w-40 xl:w-48 bg-blue-700 hover:bg-blue-600 focus:bg-blue-800 rounded-md text-lg font-medium leading-4 text-white" type="submit">
-                  Submit
+                  Subscribe
               </button>
             </form>
           @error('email')
@@ -159,5 +159,17 @@
           <p class="text-xs text-gray-600 dark:text-gray-400 font-normal">Email Send Successfully</p>
         </div>
       </div>
-    @endif  
+    @endif 
+    
+    <script>
+        $(document).ready(function(){
+          var scrollLink= $('.scroll');
+          scrollLink.click(function(e){
+            e.preventDefault();
+            $('body,html').animate({
+              scrollTop:$(this.hash).offset().top
+            },1000)
+          })
+        })
+    </script>
 </x-inputs.front>
