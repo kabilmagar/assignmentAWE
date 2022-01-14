@@ -25,7 +25,7 @@
                         <img src="https://i.ibb.co/qMzLCcB/pexels-isaw-company-945688-1.png" alt="pexels-isaw-company-945688-1" />
                         <div class="absolute bottom-6 left-6 w-36 h-12">
                             <div class="w-36 h-12 border-transparent tranform duration-500 group-hover:border-white border">
-                                <button class="-mt-1.5 -ml-1.5 w-36 h-12 bg-white dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white"><p class="text-base font-medium leading-none text-gray-800 dark:text-white">Books</p></button>
+                                <button class="-mt-1.5 -ml-1.5 w-36 h-12 bg-white dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white"><a class="text-base font-medium leading-none text-gray-800 dark:text-white scroll" href="#books">Books</a></button>
                             </div>
                         </div>
                         <div class="absolute top-0 right-0 w-12 flex justify-start item-start h-12 tranform duration-500 group-hover:bg-white dark:hover:bg-gray-900 dark:bg-transparent">
@@ -38,7 +38,7 @@
                         <img src="https://i.ibb.co/61zxMmk/pexels-dmitry-zvolskiy-2082092-1.png" alt="pexels-isaw-company-945688-1" />
                         <div class="absolute bottom-6 left-6 w-36 h-12">
                             <div class="w-36 h-12 border-transparent group-hover:border-white border tranform duration-500">
-                                <button class="-mt-1.5 -ml-1.5 w-36 h-12 bg-white dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white"><p class="text-base font-medium leading-none text-gray-800 dark:text-white">CDS</p></button>
+                                <button class="-mt-1.5 -ml-1.5 w-36 h-12 bg-white dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white"><a class="text-base font-medium leading-none text-gray-800 dark:text-white scroll" href="#cds">CDS</a></button>
                             </div>
                         </div>
                         <div class="absolute top-0 right-0 w-12 flex justify-start item-start h-12 group-hover:bg-white tranform duration-500 dark:hover:bg-gray-900 dark:bg-transparent">
@@ -51,7 +51,7 @@
                         <img src="https://i.ibb.co/7zF9Scc/pexels-devon-rockola-1578507-1.png" alt="pexels-isaw-company-945688-1" />
                         <div class="absolute bottom-6 left-6 w-36 h-12">
                             <div class="w-36 h-12 border-transparent group-hover:border-white border tranform duration-500">
-                                <button class="-mt-1.5 -ml-1.5 w-36 h-12 bg-white dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white"><p class="text-base font-medium leading-none text-gray-800 dark:text-white">Games</p></button>
+                                <button class="-mt-1.5 -ml-1.5 w-36 h-12 bg-white dark:bg-gray-800 dark:hover:bg-gray-700 dark:text-white"><a class="text-base font-medium leading-none text-gray-800 dark:text-white scroll" href="#games">Games</a></button>
                             </div>
                         </div>
                         <div class="absolute top-0 right-0 w-12 flex justify-start item-start h-12 group-hover:bg-white tranform duration-500 dark:hover:bg-gray-900 dark:bg-transparent">
@@ -64,7 +64,7 @@
     </div>
 
     
-    <div class="container xl:w-full w-11/12 mx-auto pt-16">
+    <div class="container xl:w-full w-11/12 mx-auto pt-16" id="books">
       <div class="w-full">
           <h1 class="xl:text-4xl lg:text-4xl text-3xl sm:text-left flex justify-center text-gray-800 font-extrabold  mx-auto sm:mx-0 font-mono">Books</h1>
       </div>
@@ -85,7 +85,7 @@
   </div>
 
 
-    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" id="games">
       <h1 class="xl:text-4xl lg:text-4xl text-3xl sm:text-left flex justify-center text-gray-800 font-extrabold  mx-auto sm:mx-0 font-mono">Games</h1>
         <div class="grid gap-8 lg:grid-cols-3 sm:max-w-sm sm:mx-auto lg:max-w-full">
           @foreach($games as $game)
@@ -107,7 +107,7 @@
         </div>
     </div>
 
-      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20" id="cds">
         <div class="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
           <h2 class="max-w-lg mb-6 text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto font-mono">
                 CDS
@@ -176,5 +176,17 @@
           <p class="text-xs text-gray-600 dark:text-gray-400 font-normal">Email Send Successfully</p>
         </div>
       </div>
-    @endif  
+    @endif 
+    
+    <script>
+        $(document).ready(function(){
+          var scrollLink= $('.scroll');
+          scrollLink.click(function(e){
+            e.preventDefault();
+            $('body,html').animate({
+              scrollTop:$(this.hash).offset().top
+            },1000)
+          })
+        })
+    </script>
 </x-inputs.front>
