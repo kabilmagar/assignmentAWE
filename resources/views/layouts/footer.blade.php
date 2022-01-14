@@ -1,8 +1,5 @@
 <footer class="text-gray-600 body-font">
   <div class="bg-gray-900 py-16 flex flex-col items-center justify-center f-f-l">
-    <div class="w-44">
-        <img loading="lazy" src="https://i.ibb.co/6sZ76Pj/foodies.png" alt="Foodies" />
-    </div>
     <div class="flex items-center py-12 space-x-9">
         <a class="cursor-pointer" aria-label="Find us on Facebook" role="link" href="javascript:void(0)">
            <img src="https://tuk-cdn.s3.amazonaws.com/can-uploader/center_aligned_with_background-svg1.svg" alt="facebook"> 

@@ -14,9 +14,11 @@
                     </div>
                 </div>
             @endif 
-            <div class="flex justify-end mb-4">
-                <a class="p-2 pl-5 pr-5 bg-green-500 text-gray-100 text-lg rounded-lg focus:border-4 border-green-300" href="{{url('save-cd')}}">Add CD</a> 
-            </div>
+            @if(auth()->user()->role=='admin')
+                <div class="flex justify-end mb-4">
+                    <a class="p-2 pl-5 pr-5 bg-green-500 text-gray-100 text-lg rounded-lg focus:border-4 border-green-300" href="{{url('save-cd')}}">Add CD</a> 
+                </div>
+            @endif    
             <div class="-my-2 py-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 pr-10 lg:px-8">
                 <div class="align-middle inline-block min-w-full shadow overflow-hidden bg-white shadow-dashboard px-8 pt-3 rounded-bl-lg rounded-br-lg">
                     <table class="min-w-full">
@@ -28,8 +30,9 @@
                                 <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">Duration</th>
                                 <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">Price</th>
                                 <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">Created At</th>
-                                <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">Actions</th>
-                                <th class="px-6 py-3 border-b-2 border-gray-300"></th>
+                                @if(auth()->user()->role=='admin')
+                                    <th class="px-6 py-3 border-b-2 border-gray-300 text-left text-sm leading-4 text-blue-500 tracking-wider">Actions</th>
+                                @endif    
                             </tr>
                         </thead>
                         <tbody class="bg-white">
@@ -53,10 +56,12 @@
                                     <td class="px-6 py-4 whitespace-no-wrap border-b text-blue-900 border-gray-500 text-sm leading-5">
                                         {{$row->created_at}}
                                     </td>
-                                    <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-500 text-sm leading-5">
-                                        <a class="px-5 py-2 bg-green-500 text-white rounded transition duration-300 hover:bg-green-800  focus:outline-none" href="{{url('save-cd/'.$row->id)}}">Edit</a>
-                                        <a class="px-5 py-2 bg-red-500 text-white rounded transition duration-300 hover:bg-red-800  focus:outline-none" onclick="return confirm('Are you sure?')" href="{{url('delete-cd/'.$row->id)}}">Delete</a>
-                                    </td>
+                                    @if(auth()->user()->role=='admin')
+                                        <td class="px-6 py-4 whitespace-no-wrap border-b border-gray-500 text-sm leading-5">
+                                            <a class="px-5 py-2 bg-green-500 text-white rounded transition duration-300 hover:bg-green-800  focus:outline-none" href="{{url('save-cd/'.$row->id)}}">Edit</a>
+                                            <a class="px-5 py-2 bg-red-500 text-white rounded transition duration-300 hover:bg-red-800  focus:outline-none" onclick="return confirm('Are you sure?')" href="{{url('delete-cd/'.$row->id)}}">Delete</a>
+                                        </td>
+                                    @endif    
                                 </tr>
                             @empty
                                 <tr><td colspan="7" class="text-red-500 p-4 text-center">* No Records Found</td></tr>

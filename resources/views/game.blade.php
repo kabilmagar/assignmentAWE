@@ -42,6 +42,15 @@
                              <input class='appearance-none block w-full bg-white text-gray-700 border border-gray-400 shadow-inner rounded-md py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500'  type="number" name="price" @if(isset($game_details->price)) value="{{$game_details->price}}" @endif placeholder="Enter Price" required>
                              @error('price')<div class="mt-2"><span class="text-red-500">* {{$message}}</span></div>@enderror
                         </div>
+                        <div class='w-full md:w-full px-3 mb-6'>
+                            <label class='block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2' >URL</label>
+                             <textarea class='appearance-none block w-full bg-white text-gray-700 border border-gray-400 shadow-inner rounded-md py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500' rows="5" name="url">@if(isset($game_details->url)){{$game_details->url}}@endif</textarea>
+                             @error('url')<div class="mt-2"><span class="text-red-500">* {{$message}}</span></div>@enderror
+                        </div>
+                        <div class='w-full md:w-full px-3 mb-6'>
+                            <label class='block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2' >Description</label>
+                             <textarea class='appearance-none block w-full bg-white text-gray-700 border border-gray-400 shadow-inner rounded-md py-3 px-4 leading-tight focus:outline-none  focus:border-gray-500' rows="5" name="description">@if(isset($game_details->description)){{$game_details->description}}@endif</textarea>
+                        </div>
                         <div class="flex justify-end ml-4">
                             <button class="appearance-none bg-gray-200 text-gray-900 px-2 py-1 shadow-sm border border-gray-400 rounded-md mr-3" type="submit">save changes</button>
                             <a class="appearance-none bg-gray-200 text-gray-900 px-2 py-1 shadow-sm border border-gray-400 rounded-md mr-3" href="{{url('view-game-table')}}">Go Back</a>

@@ -24,13 +24,16 @@ class BookController extends Controller
             'author'=>['required','string','max:255'],
             'title'=>['required','string','max:255'],
             'page'=>['required','numeric'],
-            'price'=> ['required','numeric']
+            'price'=> ['required','numeric'],
+            'url'=>['nullable']
         ]);
         Book::updateOrCreate(['id'=>$request->id],[
             'author'=>$request->author,
             'title'=>$request->title,
             'page'=>$request->page,
-            'price'=>$request->price
+            'price'=>$request->price,
+            'url'=>$request->url,
+            'description'=>$request->description
         ]);
         
         if($request->id){

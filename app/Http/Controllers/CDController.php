@@ -25,13 +25,16 @@ class CDController extends Controller
             'artist'=>['required','string','max:255'],
             'name'=>['required','string','max:255'],
             'duration'=>['required','numeric'],
-            'price'=> ['required','numeric']
+            'price'=> ['required','numeric'],
+            'url'=>['nullable']
         ]);
         Cd::updateOrCreate(['id'=>$request->id],[
             'artist'=>$request->artist,
             'name'=>$request->name,
             'duration'=>$request->duration,
-            'price'=>$request->price
+            'price'=>$request->price,
+            'url'=>$request->url,
+            'description'=>$request->description
         ]);
         
         if($request->id){

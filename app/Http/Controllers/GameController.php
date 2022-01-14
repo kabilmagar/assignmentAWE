@@ -24,13 +24,16 @@ class GameController extends Controller
             'console'=>['required','string','max:255'],
             'title'=>['required','string','max:255'],
             'pegi'=>['required','numeric'],
-            'price'=> ['required','numeric']
+            'price'=> ['required','numeric'],
+            'url'=>['nullable']
         ]);
         Game::updateOrCreate(['id'=>$request->id],[
             'console'=>$request->console,
             'title'=>$request->title,
             'pegi'=>$request->pegi,
-            'price'=>$request->price
+            'price'=>$request->price,
+            'url'=>$request->url,
+            'description'=>$request->description
         ]);
         
         if($request->id){
